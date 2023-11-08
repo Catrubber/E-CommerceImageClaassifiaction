@@ -36,4 +36,4 @@ df.describe(include='all').T  # statistics for all data. 문자열 정보를 포
 
 # Save all process so far without index
 # SQL 작업 + 지금까지의 분석 데이터 저장 (index 생성 방지 옵션 설정)
-df.to_csv('data/Fashion_SQL.csv', index=False) 
+df.to_csv('../data/Fashion_SQL.csv', index=False) 
