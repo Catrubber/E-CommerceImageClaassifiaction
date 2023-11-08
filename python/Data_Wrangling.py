@@ -32,8 +32,6 @@ df = df[['PRODUCTID','GENDER_SIMPLIFIED', 'FEMALE_SIMPLIFIED','MALE_SIMPLIFIED',
 # U.S standard name fix from U.K.  영국이 아닌 미국기준 철자로 변경
 df.rename(columns = {'COLOUR':'COLOR'},inplace=True)
 
-df.describe(include='all').T  # statistics for all data. 문자열 정보를 포함한 경우까지 조회
-
 # Save all process so far without index
 # SQL 작업 + 지금까지의 분석 데이터 저장 (index 생성 방지 옵션 설정)
 df.to_csv('../data/Fashion_SQL.csv', index=False) 
